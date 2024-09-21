@@ -35,7 +35,9 @@ const Footer = () => {
           <div className="footer-column">
             <h3>Site Links</h3>
             <nav>
+             
               <p><NavLink to="/" exact className={({ isActive }) => isActive ? 'active' : ''}>Home</NavLink></p>
+              <p><NavLink to="/WordsAdventure" exact className={({ isActive }) => isActive ? 'active' : ''}>WordsAdventure</NavLink></p>
               <p><NavLink to="/projects" className={({ isActive }) => isActive ? 'active' : ''}>Our Projects</NavLink></p>
               <p><NavLink to="/team" className={({ isActive }) => isActive ? 'active' : ''}>Our Team</NavLink></p>
               <p><NavLink to="/about-me" className={({ isActive }) => isActive ? 'active' : ''}>About Me</NavLink></p>

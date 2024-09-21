@@ -40,6 +40,7 @@ const Header = () => {
       <nav className={`nav-links ${isMobileMenuOpen ? 'open' : ''}`}>
         <ul>
           <li><NavLink to="/" exact className={({ isActive }) => isActive ? 'active' : ''} onClick={handleLinkClick}>Home</NavLink></li>
+          <li><NavLink to="/WordsAdventure" exact className={({ isActive }) => isActive ? 'active' : ''} onClick={handleLinkClick}>Words Adventure</NavLink></li>  
           <li><NavLink to="/projects" className={({ isActive }) => isActive ? 'active' : ''} onClick={handleLinkClick}>Our Projects</NavLink></li>
           <li><NavLink to="/team" className={({ isActive }) => isActive ? 'active' : ''} onClick={handleLinkClick}>Our Team</NavLink></li>
           <li><NavLink to="/about-me" className={({ isActive }) => isActive ? 'active' : ''} onClick={handleLinkClick}>About Me</NavLink></li>
