@@ -1,110 +1,153 @@
-.projects-page {
-    padding: 2ch;
+.contact-page {
+    padding: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
   }
   
-  .projects {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; /* Centers the projects */
-    gap: 20px; /* Space between projects */
-  }
-  
-  .project {
-    width: 30%; /* Display 3 projects at a time on larger screens */
+  .contact-content h2 {
+    font-size: xx-large;
+    font-weight: bold;
+    color: #bd0d0d; 
+    margin-bottom: 20px;
     text-align: center;
-    padding: 0.6%;
-    
   }
   
-  .project img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 10px;
-    
-    
+  .contact-columns {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
   }
   
-  .project a{
-    text-decoration: none; 
-    color: #bd0d0d;
-  }
-  
-  .project a:hover{
-    text-decoration: none; 
-    color: gold;
-  }
-  
-  
-  .justified-text {
+  .contact-info {
+    flex: 1;
+    padding-right: 20px;
+    min-width: 300px;
+    color: #555;
+    font-size: large;
+    font-weight: bold;
     text-align: justify;
   }
   
-  .projects-page h2 {
-    font-size: xx-large;
+  .contact-info h3 {
+    margin-top: 20px;
+    color: #c50e1f;
+    font-size: x-large;
+    text-align: left;
+  }
+  
+  .availability, .contact-details {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .availability p, .contact-details p {
+    font-size: large;
+    color: #555;
+    margin: 5px 0;
     font-weight: bold;
-    color: #bd0d0d;
+  }
+  
+  .availability strong {
+    color: #c50e1f;
+  }
+  
+  .contact-details p a {
+    font-size: large;
+    color: #555;
+    margin: 5px 0;
+    font-weight: bold;
     text-decoration: none;
   }
   
-  .carousel-controls {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
+  .contact-details p a:hover {
+    font-size: 23px;
+    color: gold;
+    margin: 5px 0;
+    font-weight: bold;
+    text-decoration: none;
   }
   
-  .carousel-button {
-    background-color: #bd0d0d;
-    border: none;
+  .contact-details strong {
+    color: #c50e1f;
+  }
+  
+  .contact-form-container {
+    flex: 1;
+    padding-left: 20px;
+    min-width: 300px;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+    text-align: left;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    width: 100%;
+  }
+  
+  .contact-form textarea {
+    resize: vertical;
+  }
+  
+  .contact-form button {
+    background-color: #c50e1f;
     color: white;
     padding: 10px 20px;
-    margin: 0 10px;
-    cursor: pointer;
+    border: none;
     border-radius: 5px;
-    font-size: large;
+    cursor: pointer;
+    font-size: 16px;
   }
   
-  .carousel-button:hover {
-    background-color: #a00c1c;
+  .contact-form button:hover {
+    background-color: #a00b16;
   }
   
-  .website-name {
-    font-weight: bold;
-    font-size: 1.2em;
-    color: #bd0d0d;
-    margin-top: 10px;
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .contact-columns {
+      flex-direction: column;
+    }
+  
+    .contact-info, .contact-form-container {
+      padding: 0;
+    }
+  
+    .contact-info {
+      margin-bottom: 20px;
+    }
+  
+    .contact-info p {
+      font-size: 18px;
+      line-height: 1.5;
+    }
+  
+    .availability p, .contact-details p {
+      font-size: 18px;
+    }
+  
+    .contact-form input,
+    .contact-form textarea {
+      font-size: 14px;
+    }
+  
+    .contact-form button {
+      font-size: 14px;
+    }
   }
   
-  .website-name a {
-    text-decoration: none;
-    color: #bd0d0d;
-  }
-  
-  .website-name a:hover {
-    color: gold;
-  }
-
-
-
-
-/* Responsive design for mobile devices */
-@media screen and (max-width: 768px) {
-  .project {
-    width: 80%; /* Display 1 project at a time on tablets and small screens */
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .project {
-    width: 100%; /* Display 1 project at a time on mobile devices */
-  }
-
-  .title_text {
-    font-size: large; /* Adjust title size for smaller screens */
-  }
-
-  .carousel-button {
-    padding: 8px 16px; /* Adjust button padding for smaller screens */
-    font-size: medium;
-  }
-}
