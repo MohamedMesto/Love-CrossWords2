@@ -87,4 +87,24 @@
 
 
 
- 
+/* Responsive design for mobile devices */
+@media screen and (max-width: 768px) {
+  .project {
+    width: 80%; /* Display 1 project at a time on tablets and small screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .project {
+    width: 100%; /* Display 1 project at a time on mobile devices */
+  }
+
+  .title_text {
+    font-size: large; /* Adjust title size for smaller screens */
+  }
+
+  .carousel-button {
+    padding: 8px 16px; /* Adjust button padding for smaller screens */
+    font-size: medium;
+  }
+}
