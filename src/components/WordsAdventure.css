@@ -1,0 +1,23 @@
+/* Basic crossword layout */
+#crossword {
+    display: grid;
+    grid-template-columns: repeat(40, 30px); /* 40 columns for the crossword grid */
+    gap: 2px;
+    margin: 20px;
+}
+
+/* Each row in the crossword grid */
+.row {
+    display: flex;
+}
+
+/* Each cell in the crossword */
+.cell {
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 16px;
+    line-height: 30px;
+    cursor: pointer; /* Indicate cells are clickable */
+}
