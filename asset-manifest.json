@@ -1,21 +1,30 @@
 {
   "files": {
-    "main.css": "/static/css/main.5f0933c1.css",
-    "main.js": "/static/js/main.356a9200.js",
+    "main.css": "/static/css/main.13c00d11.css",
+    "main.js": "/static/js/main.46c2bd38.js",
     "static/js/453.1e635cac.chunk.js": "/static/js/453.1e635cac.chunk.js",
+    "static/media/bruschure_educationcollage.png": "/static/media/bruschure_educationcollage.7341696a8cf1b6f937ff.png",
+    "static/media/bruschure_eng.png": "/static/media/bruschure_eng.3b622c95068343ff76e0.png",
     "static/media/logo3.png": "/static/media/logo3.d0d71625b22bf629aa95.png",
     "static/media/project3.jpg": "/static/media/project3.d0d71625b22bf629aa95.jpg",
     "static/media/logo5.png": "/static/media/logo5.280b7a9541ebb4d841e0.png",
+    "static/media/LQ2050_logo6.png": "/static/media/LQ2050_logo6.97f238aa9cd8208daa77.png",
     "static/media/project2.jpg": "/static/media/project2.97f238aa9cd8208daa77.jpg",
     "static/media/project1.jpg": "/static/media/project1.7bc9c6e7bf1f36e846a9.jpg",
+    "static/media/Embroidered_tissue_box_with_satin_ribbons.jpg": "/static/media/Embroidered_tissue_box_with_satin_ribbons.6525760c5ea00dd41ef7.jpg",
     "static/media/project9.jpg": "/static/media/project9.5278669c8fdc762afd90.jpg",
     "static/media/project8.jpg": "/static/media/project8.12fb682c3b5b16cd1b23.jpg",
+    "static/media/loqta2050.de_logo.png": "/static/media/loqta2050.de_logo.aa13c68a511bddcdca3a.png",
     "static/media/project5.jpg": "/static/media/project5.aa13c68a511bddcdca3a.jpg",
     "static/media/project7.jpg": "/static/media/project7.a76b97c3c7bf6fcaa983.jpg",
+    "static/media/vosonbilsh.png": "/static/media/vosonbilsh.33c4796853b81f6db85b.png",
+    "static/media/Wooden_keychain2.png": "/static/media/Wooden_keychain2.ca45af1a74e20e677277.png",
+    "static/media/Wooden_keychain1.png": "/static/media/Wooden_keychain1.4a0b23f6f1cb7c8eee47.png",
     "static/media/logo4.png": "/static/media/logo4.4573bc2e5dff0c047ebf.png",
     "static/media/team1.jpg": "/static/media/team1.fcf3365906b82e481037.jpg",
     "static/media/project6.jpg": "/static/media/project6.f3e98a4fc8bd5e5ef324.jpg",
     "static/media/mmm2050.png": "/static/media/mmm2050.ba4cb050b2c4c5c9b696.png",
+    "static/media/eng_edlib_logo.png": "/static/media/eng_edlib_logo.ade194a82d076337aebd.png",
     "static/media/team2.jpg": "/static/media/team2.f708d7ba363c944ed14a.jpg",
     "static/media/project4.jpg": "/static/media/project4.06bd73fe174f2f9efc67.jpg",
     "static/media/team3.jpg": "/static/media/team3.6092868298cb6496736a.jpg",
@@ -24,12 +33,12 @@
     "static/media/haendlerbund.png": "/static/media/haendlerbund.e1e2c1e26e4378996352.png",
     "static/media/team5.jpg": "/static/media/team5.fef18514bd1ac8019411.jpg",
     "index.html": "/index.html",
-    "main.5f0933c1.css.map": "/static/css/main.5f0933c1.css.map",
-    "main.356a9200.js.map": "/static/js/main.356a9200.js.map",
+    "main.13c00d11.css.map": "/static/css/main.13c00d11.css.map",
+    "main.46c2bd38.js.map": "/static/js/main.46c2bd38.js.map",
     "453.1e635cac.chunk.js.map": "/static/js/453.1e635cac.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5f0933c1.css",
-    "static/js/main.356a9200.js"
+    "static/css/main.13c00d11.css",
+    "static/js/main.46c2bd38.js"
   ]
 }
