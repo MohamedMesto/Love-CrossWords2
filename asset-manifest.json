@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.13c00d11.css",
-    "main.js": "/static/js/main.7834d390.js",
+    "main.css": "/static/css/main.83e16930.css",
+    "main.js": "/static/js/main.d40bb8f5.js",
     "static/js/453.1e635cac.chunk.js": "/static/js/453.1e635cac.chunk.js",
     "static/media/bruschure_educationcollage.png": "/static/media/bruschure_educationcollage.7341696a8cf1b6f937ff.png",
     "static/media/bruschure_eng.png": "/static/media/bruschure_eng.3b622c95068343ff76e0.png",
@@ -33,12 +33,12 @@
     "static/media/haendlerbund.png": "/static/media/haendlerbund.e1e2c1e26e4378996352.png",
     "static/media/team5.jpg": "/static/media/team5.fef18514bd1ac8019411.jpg",
     "index.html": "/index.html",
-    "main.13c00d11.css.map": "/static/css/main.13c00d11.css.map",
-    "main.7834d390.js.map": "/static/js/main.7834d390.js.map",
+    "main.83e16930.css.map": "/static/css/main.83e16930.css.map",
+    "main.d40bb8f5.js.map": "/static/js/main.d40bb8f5.js.map",
     "453.1e635cac.chunk.js.map": "/static/js/453.1e635cac.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.13c00d11.css",
-    "static/js/main.7834d390.js"
+    "static/css/main.83e16930.css",
+    "static/js/main.d40bb8f5.js"
   ]
 }
