@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.13c00d11.css",
-    "main.js": "/static/js/main.46c2bd38.js",
+    "main.js": "/static/js/main.d24ed191.js",
     "static/js/453.1e635cac.chunk.js": "/static/js/453.1e635cac.chunk.js",
     "static/media/bruschure_educationcollage.png": "/static/media/bruschure_educationcollage.7341696a8cf1b6f937ff.png",
     "static/media/bruschure_eng.png": "/static/media/bruschure_eng.3b622c95068343ff76e0.png",
@@ -34,11 +34,11 @@
     "static/media/team5.jpg": "/static/media/team5.fef18514bd1ac8019411.jpg",
     "index.html": "/index.html",
     "main.13c00d11.css.map": "/static/css/main.13c00d11.css.map",
-    "main.46c2bd38.js.map": "/static/js/main.46c2bd38.js.map",
+    "main.d24ed191.js.map": "/static/js/main.d24ed191.js.map",
     "453.1e635cac.chunk.js.map": "/static/js/453.1e635cac.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.13c00d11.css",
-    "static/js/main.46c2bd38.js"
+    "static/js/main.d24ed191.js"
   ]
 }
