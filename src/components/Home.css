@@ -71,3 +71,34 @@
   .indicator.active {
     opacity: 1;
   }
+
+
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .home {
+      padding: 10px;
+      text-align: center;
+      min-height: auto;
+    }
+  
+    .un2050_logo img {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+    }
+  
+    .justified-text {
+      font-size: medium;
+      margin-top: 10px;
+    }
+  
+    .title_text {
+      font-size: large;
+    }
+  
+    h2 a {
+      font-size: medium;
+    }
+  }
+  

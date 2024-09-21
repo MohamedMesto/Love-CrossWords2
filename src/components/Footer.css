@@ -78,3 +78,30 @@
   .footer-column nav p {
     margin: 0;
   }
+
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .footer-column, .footer-column-about {
+      max-width: 100%;
+      text-align: center;
+      padding: 5px 0;
+    }
+  
+    .footer-columns {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .social-icons {
+      text-align: center;
+      margin-top: 20px;
+    }
+  }
+  
+  
+  .footer .nav-links .active {
+    font-weight: bold; /* or any other styling to highlight the active link */
+    color: gold; /* Example color for active links */
+  }
+  
