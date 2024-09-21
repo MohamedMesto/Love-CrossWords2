@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.f70c9fe8.css",
+    "main.js": "/static/js/main.1cd5d3c8.js",
+    "static/js/453.1e635cac.chunk.js": "/static/js/453.1e635cac.chunk.js",
+    "static/media/logo3.png": "/static/media/logo3.d0d71625b22bf629aa95.png",
+    "static/media/project3.jpg": "/static/media/project3.d0d71625b22bf629aa95.jpg",
+    "static/media/logo5.png": "/static/media/logo5.280b7a9541ebb4d841e0.png",
+    "static/media/project2.jpg": "/static/media/project2.97f238aa9cd8208daa77.jpg",
+    "static/media/project1.jpg": "/static/media/project1.7bc9c6e7bf1f36e846a9.jpg",
+    "static/media/project9.jpg": "/static/media/project9.5278669c8fdc762afd90.jpg",
+    "static/media/project8.jpg": "/static/media/project8.12fb682c3b5b16cd1b23.jpg",
+    "static/media/project5.jpg": "/static/media/project5.aa13c68a511bddcdca3a.jpg",
+    "static/media/project7.jpg": "/static/media/project7.a76b97c3c7bf6fcaa983.jpg",
+    "static/media/logo4.png": "/static/media/logo4.4573bc2e5dff0c047ebf.png",
+    "static/media/project6.jpg": "/static/media/project6.f3e98a4fc8bd5e5ef324.jpg",
+    "static/media/project4.jpg": "/static/media/project4.06bd73fe174f2f9efc67.jpg",
+    "static/media/un2050_logo.png": "/static/media/un2050_logo.487d6a0cce39070581b2.png",
+    "static/media/logo2.png": "/static/media/logo2.89ceeb907faa2aa3346c.png",
+    "static/media/haendlerbund.png": "/static/media/haendlerbund.e1e2c1e26e4378996352.png",
+    "index.html": "/index.html",
+    "main.f70c9fe8.css.map": "/static/css/main.f70c9fe8.css.map",
+    "main.1cd5d3c8.js.map": "/static/js/main.1cd5d3c8.js.map",
+    "453.1e635cac.chunk.js.map": "/static/js/453.1e635cac.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f70c9fe8.css",
+    "static/js/main.1cd5d3c8.js"
+  ]
+}
