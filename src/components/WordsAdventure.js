@@ -51,8 +51,22 @@ const crosswordWords = [
 const gridSize = 40;
 const generateEmptyGrid = () => Array(gridSize).fill().map(() => Array(gridSize).fill(""));
 
+// const generateEmptyGrid = () => {
+//   const size = 20;
+//   return Array(size)
+//     .fill(null)
+//     .map(() => Array(size).fill(""));
+// };
+
 const WordsAdventure = () => {
-  const [grid, setGrid] = useState(generateEmptyGrid());
+
+    //  Grid state
+    const [grid, setGrid] = useState(generateEmptyGrid());
+
+    //  Current word being filled
+    const [currentWord, setCurrentWord] = useState(null);
+    const [inputValue, setInputValue] = useState("");
+    const [hintsUsed, setHintsUsed] = useState(0);
 
   // Function to place words in the grid
   const placeWordsInGrid = () => {
@@ -72,7 +86,61 @@ const WordsAdventure = () => {
     setGrid(newGrid);
   };
 
-  // Call this function when the component mounts
+  //  Handle number click to select a word
+  const handleNumberClick = (wordObj) => {
+    setCurrentWord(wordObj);
+    setInputValue(""); // Clear previous input
+    setHintsUsed(0);   // Reset hint usage
+  };
+
+  //  Handle input change
+  const handleInputChange = (e) => {
+    setInputValue(e.target.value);
+  };
+
+    // // Handle input change
+    // const handleInputChange = (word, value) => {
+    // setInputValues((prev) => ({ ...prev, [word]: value }));
+    // };
+
+  //  Handle submission of the word
+  const handleSubmitWord = () => {
+    if (inputValue.toLowerCase() === currentWord.word.toLowerCase()) {
+      alert("Correct!");
+    } else {
+      alert("Try again.");
+    }
+    setCurrentWord(null); // Close input field after submission
+  };
+
+  //  Handle hints
+  const handleHint = () => {
+    if (hintsUsed < currentWord.word.length) {
+      setInputValue(currentWord.word.substring(0, hintsUsed + 1)); // Reveal next letter
+      setHintsUsed(hintsUsed + 1);
+    }
+  };
+
+
+
+
+
+
+//      // Handle hint button click
+//   const handleHintClick = (word) => {
+//     const currentInput = inputValues[word] || "";
+//     const correctWord = crosswordWords.find((w) => w.word === word).word;
+
+//     if (currentInput.length < correctWord.length) {
+//       setInputValues((prev) => ({
+//         ...prev,
+//         [word]: currentInput + correctWord[currentInput.length],
+//       }));
+//       setHintsUsed(hintsUsed + 1);
+//     }
+//   };
+
+  // Place words when component mounts
   React.useEffect(() => {
     placeWordsInGrid();
   }, []);
@@ -80,17 +148,40 @@ const WordsAdventure = () => {
   return (
     <div className="crossword-container">
       <h1>WordsAdventure: Ambition, Perseverance, and Creativity Crossword</h1>
+
+      {/*  Render the crossword grid */}
       <div className="grid">
         {grid.map((row, rowIndex) => (
           <div key={rowIndex} className="row">
             {row.map((cell, cellIndex) => (
               <div key={cellIndex} className="cell">
-                {cell}
+                {cell && rowIndex === crosswordWords.find(wordObj => wordObj.row === rowIndex && wordObj.col === cellIndex)?.row ? (
+                  <button onClick={() => handleNumberClick(crosswordWords.find(wordObj => wordObj.row === rowIndex && wordObj.col === cellIndex))}>
+                    {crosswordWords.find(wordObj => wordObj.row === rowIndex && wordObj.col === cellIndex) ? rowIndex + 1 : ""}
+                  </button>
+                ) : (
+                  cell
+                )}
               </div>
             ))}
           </div>
         ))}
       </div>
+
+      {/*  Render the input section for the selected word */}
+      {currentWord && (
+        <div className="input-section">
+          <h2>Enter the word for: {currentWord.clue}</h2>
+          <input type="text" value={inputValue} onChange={handleInputChange} />
+          <button onClick={handleSubmitWord}>Enter</button>
+          <button onClick={handleHint}>Hint</button>
+          <div className="hint-info">
+            Hints used: {hintsUsed}/{currentWord.word.length}
+          </div>
+        </div>
+      )}
+
+      {/*  Render the clues */}
       <div className="clue-section">
         <h2>Clues</h2>
         {crosswordWords.map((wordObj, index) => (
@@ -104,3 +195,4 @@ const WordsAdventure = () => {
 };
 
 export default WordsAdventure;
+

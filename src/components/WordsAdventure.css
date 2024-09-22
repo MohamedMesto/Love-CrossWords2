@@ -21,3 +21,13 @@
     line-height: 30px;
     cursor: pointer; /* Indicate cells are clickable */
 }
+
+/* Correct word highlight */
+.cell.correct {
+    background-color: lightgreen;
+}
+
+/* Incorrect word highlight */
+.cell.incorrect {
+    background-color: lightcoral;
+}
