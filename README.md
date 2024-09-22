@@ -1,11 +1,11 @@
-![CrossWord Slogan](src/assets/favicon/favicon-96x96.png)
+![CrossWord Slogan](src/src/assets/favicon/favicon-96x96.png)
 # **_Love Cross Words (Think and play rationally forever) - Project Portfolio 2 - JavaScript_**
 
 "Love Cross Words (Think and play rationally forever)" Engaging in crossword puzzles can be a source of both mental stimulation and motivation. The challenge of deciphering clues and finding the right words within a grid not only exercises one's vocabulary but also promotes cognitive flexibility and problem-solving skills. The satisfaction derived from successfully completing a crossword puzzle can boost self-esteem and provide a sense of accomplishment. Additionally, the variety of topics covered in crosswords exposes individuals to a diverse range of information, making the activity an enjoyable way to learn new words and trivia. Whether it's the thrill of solving challenging clues or the joy of expanding one's knowledge base, the motivation behind tackling crossword puzzles lies in the mental exercise, accomplishment, and the sheer enjoyment of the linguistic journey they offer.
 
 You can view the live site here - <a href="https://mohamedmesto.github.io/Love-CrossWords2/" target="_blank"> Love Cross Words </a>
 
-![Love Cross Words responsive design](src/assets/images/readme_images/devices.png)
+![Love Cross Words responsive design](src/src/assets/images/readme_images/devices.png)
 
 
 
@@ -105,9 +105,9 @@ Love Cross Words (Think and play rationally forever) consists of 3 page website 
 
 The color scheme of our architectural crossword puzzle application is meticulously chosen to evoke a sense of sophistication and creativity. Dominated by cool and muted tones such as subtle grays and blues, the interface provides a calm and focused backdrop, allowing users to concentrate on solving puzzles. Accents of warm earthy tones, inspired by natural building materials, add a touch of warmth and connection to architectural elements. The color palette aims to reflect the elegance of architectural design while ensuring readability and visual comfort. Overall, the harmonious blend of colors creates an aesthetically pleasing environment that complements the intellectual engagement of exploring the world of architecture through crossword challenges.
 
-![Colour palette image of 5 colours](assets/images/readme_images/colour_palette_lyb.png)
+![Colour palette image of 5 colours](src/assets/images/readme_images/colour_palette_lyb.png)
 
-![Colour palette image of 5 colours](assets/images/readme_images/colour_palette_lyb2.png)
+![Colour palette image of 5 colours](src/assets/images/readme_images/colour_palette_lyb2.png)
 ### Typography
 
 The typography of our architectural crossword puzzle application is designed for clarity and readability, aligning with a minimalist aesthetic. Utilizing a classic combination of black text on a white background ensures optimal legibility, reducing eye strain during extended puzzle-solving sessions. We employ a clean and modern sans-serif font to convey a sense of simplicity and sophistication, enhancing the overall user experience. The well-defined letterforms contribute to an organized and visually pleasing interface, allowing players to focus on deciphering architectural clues effortlessly. This intentional choice in typography aims to create a sleek, user-friendly environment that complements the intellectual engagement of exploring architectural concepts through crossword challenges..
@@ -127,31 +127,31 @@ Welcome to Love Cross Words, where the fusion of thinking and play lasts a lifet
 
 - There are three variations of the navigation bar for different screen sizes, and each keep the same colour and design styles with only the structure changing to keep the user experience as smooth as possible.
 
-![Desktop Navbar](assets/images/readme_images/navbar-desktop.png)
+![Desktop Navbar](src/assets/images/readme_images/navbar-desktop.png)
 
  
-![Mobile Navbar](assets/images/readme_images/navbar-mobile.png)
+![Mobile Navbar](src/assets/images/readme_images/navbar-mobile.png)
 
 ## Home Page
 
-![Desktop Homepage](assets/images/readme_images/home-page1.png)
+![Desktop Homepage](src/assets/images/readme_images/home-page1.png)
 
 
 ### Cross Word Game Area
  
-![Cross Word Game Area](assets/images/readme_images/cr_area.png)
+![Cross Word Game Area](src/assets/images/readme_images/cr_area.png)
 
 
 ### Answer Section
 
-![Answer Section](assets/images/readme_images/answer_section.png)
+![Answer Section](src/assets/images/readme_images/answer_section.png)
 
 ### Check CrossWords Puzzle Result Section (Button)
 
 
 
 
- ![Check Section](assets/images/readme_images/check_section.png)
+ ![Check Section](src/assets/images/readme_images/check_section.png)
  
 
 [Back to top](<#contents>)
@@ -196,33 +196,33 @@ Welcome to Love Cross Words, where the fusion of thinking and play lasts a lifet
 
 Love Cross Words has been validated via W3C HTML Validator and the W3C CSS Validator. There were 1 minor errors that came up for home page. This was immediately corrected and documented down below in [Bugs Fixed](<#bugs-fixed>).
 
-![W3C HTML Validator](assets/images/readme_images/html-validator.png)
+![W3C HTML Validator](src/assets/images/readme_images/html-validator.png)
 
 For Style.css and Style_cr.css files.
 
-![W3C CSS Validator](assets/images/readme_images/css-validator1.png)
-![W3C CSS Validator](assets/images/readme_images/css-validator2.png)
+![W3C CSS Validator](src/assets/images/readme_images/css-validator1.png)
+![W3C CSS Validator](src/assets/images/readme_images/css-validator2.png)
 
 For script_desc.js and script_fn.js
 
-![W3C JS Validator](assets/images/readme_images/js-validator.png)
+![W3C JS Validator](src/assets/images/readme_images/js-validator.png)
  
 
 ## Lighthouse Testing
 
 The website was also put through Lighthouse testing via Chrome Devtools which tests a site under 4 different headings; Performance, Accessibility, Best Practices and it tests it under mobile and desktop criteria.
 
-![Lighthouse testing](assets/images/readme_images/lighthouse_results.png)
+![Lighthouse testing](src/assets/images/readme_images/lighthouse_results.png)
 
 ## Accessibility Testing 
 
 [A11y](https://color.a11y.com/) was used to check the colour contrast on the website for accessibility purposes which it passed.
 
-![A11y Contrast validator](assets/images/readme_images/color-contrast-validator.png)
+![A11y Contrast validator](src/assets/images/readme_images/color-contrast-validator.png)
 
 [Adobe Color](https://color.adobe.com/create/color-accessibility) was also used to test that the colour scheme was accessible for those with different types of blindness which it also succeded in doing.
 
-![Adobe Color Blind Safe Checker](assets/images/readme_images/adobe-color-blind-safe.png)
+![Adobe Color Blind Safe Checker](src/assets/images/readme_images/adobe-color-blind-safe.png)
 
  
 
@@ -251,7 +251,7 @@ all the previous sections checked manually to be sure that all work well.
 
 The following error was presented once the website was placed through W3C HTML Validator.
 
-![Adobe Color Blind Safe Checker](assets/images/readme_images/html_validation_error.png)
+![Adobe Color Blind Safe Checker](src/assets/images/readme_images/html_validation_error.png)
 
 
 It said that the script of js do not need type="text/javascript". Once I removed it from the attributes, it cleared that error up.
@@ -260,7 +260,7 @@ It said that the script of js do not need type="text/javascript". Once I removed
 
 There was an error by a size attribute. and already fixed
 
-![Adobe Color Blind Safe Checker](assets/images/readme_images/css_validation_error.png) 
+![Adobe Color Blind Safe Checker](src/assets/images/readme_images/css_validation_error.png) 
 
  
 
@@ -269,11 +269,11 @@ There was an error by a size attribute. and already fixed
 Chrome Devtools was initially used to test the responsiveness of the website. However it proved to be somewhat inconsistent with results despite no code being changed. Therefore another Chrome extension was used, [Viewport Resizer](https://chrome.google.com/webstore/detail/viewport-resizer-%E2%80%93-respon/kapnjjcfcncngkadhpmijlkblpibdcgm?hl=en) and a website, [Responsive Design Checker](https://responsivedesignchecker.com/) was used in conjunction with Chrome Devtools to make sure the website was fully responsive.
 
 
-![Chrome Devtools responsive viewer](assets/images/readme_images/chrome_devtools_responsive_viewer.png)
+![Chrome Devtools responsive viewer](src/assets/images/readme_images/chrome_devtools_responsive_viewer.png)
 
-![Viewport Resizer Chrome Extension](assets/images/readme_images/chrome_extension_viewport_resizer.png)
+![Viewport Resizer Chrome Extension](src/assets/images/readme_images/chrome_extension_viewport_resizer.png)
 
-![Responsive Design Checker](assets/images/readme_images/responsive_design_checker.png)
+![Responsive Design Checker](src/assets/images/readme_images/responsive_design_checker.png)
 
 
 
