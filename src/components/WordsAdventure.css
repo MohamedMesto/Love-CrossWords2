@@ -1,33 +1,44 @@
-/* Basic crossword layout */
-#crossword {
+.crossword-container {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .grid {
     display: grid;
-    grid-template-columns: repeat(40, 30px); /* 40 columns for the crossword grid */
-    gap: 2px;
-    margin: 20px;
-}
-
-/* Each row in the crossword grid */
-.row {
-    display: flex;
-}
-
-/* Each cell in the crossword */
-.cell {
+    grid-template-columns: repeat(20, 30px);
+    margin: 20px auto;
+  }
+  
+  .row {
+    display: contents;
+  }
+  
+  .cell {
+    border: 1px solid #000;
     width: 30px;
     height: 30px;
-    border: 1px solid black;
-    text-align: center;
-    font-size: 16px;
-    line-height: 30px;
-    cursor: pointer; /* Indicate cells are clickable */
-}
-
-/* Correct word highlight */
-.cell.correct {
-    background-color: lightgreen;
-}
-
-/* Incorrect word highlight */
-.cell.incorrect {
-    background-color: lightcoral;
-}
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+  }
+  
+  button {
+    background-color: lightblue;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .input-section {
+    margin: 20px 0;
+  }
+  
+  .timer-section {
+    margin-bottom: 20px;
+  }
+  
+  .score-section {
+    margin-top: 20px;
+  }
+  
