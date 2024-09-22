@@ -68,6 +68,45 @@ const WordsAdventure = () => {
     const [inputValue, setInputValue] = useState("");
     const [hintsUsed, setHintsUsed] = useState(0);
 
+
+
+    // Timer and score
+    const [timer, setTimer] = useState(0);
+    const [timeLeft, setTimeLeft] = useState(0);
+    const [score, setScore] = useState(100);
+
+
+    // Stage 4: Handle timer setup
+    const handleSetTimer = (minutes) => {
+        setTimer(minutes * 60);
+        setTimeLeft(minutes * 60);
+    };
+
+    // Stage 4: Start the timer
+    React.useEffect(() => {
+        if (timeLeft > 0) {
+        const interval = setInterval(() => {
+            setTimeLeft(timeLeft - 1);
+        }, 1000);
+        return () => clearInterval(interval);
+        }
+    }, [timeLeft]);
+
+    // Stage 4: Adjust score based on hints
+    const handleHint = () => {
+    if (hintsUsed < currentWord.word.length) {
+        setInputValue(currentWord.word.substring(0, hintsUsed + 1)); // Reveal next letter
+        setHintsUsed(hintsUsed + 1);
+        setScore(score - 5); // Decrease score by 5 for each hint
+    }
+    };
+
+
+
+
+
+
+
   // Function to place words in the grid
   const placeWordsInGrid = () => {
     const newGrid = generateEmptyGrid();
@@ -103,7 +142,7 @@ const WordsAdventure = () => {
     // setInputValues((prev) => ({ ...prev, [word]: value }));
     // };
 
-  //  Handle submission of the word
+  //  Handle submission of the word / Submission logic
   const handleSubmitWord = () => {
     if (inputValue.toLowerCase() === currentWord.word.toLowerCase()) {
       alert("Correct!");
@@ -113,13 +152,7 @@ const WordsAdventure = () => {
     setCurrentWord(null); // Close input field after submission
   };
 
-  //  Handle hints
-  const handleHint = () => {
-    if (hintsUsed < currentWord.word.length) {
-      setInputValue(currentWord.word.substring(0, hintsUsed + 1)); // Reveal next letter
-      setHintsUsed(hintsUsed + 1);
-    }
-  };
+ 
 
 
 
@@ -189,6 +222,11 @@ const WordsAdventure = () => {
             <strong>{index + 1}. {wordObj.direction === "horizontal" ? "Across" : "Down"}:</strong> {wordObj.clue}
           </div>
         ))}
+      </div>
+
+            {/* Score Display */}
+            <div className="score-section">
+        <h2>Score: {score}</h2>
       </div>
     </div>
   );
